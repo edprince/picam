@@ -13,7 +13,7 @@ Project Tasks
    * Python
  * Create database on server
  * Use HTTP to transfer the file across to the server
- * Insert location to image with image ID in a table
+ * Insert file path of image with image ID in a table
  * Create a webage that can display the image
  * Display a new image every 10 seconds
  * Remove images from older than 2 days
