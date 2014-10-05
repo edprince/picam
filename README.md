@@ -6,8 +6,8 @@ modular home-based security system using the Raspberry Pi
 ![Raspberry Pi](https://lh6.googleusercontent.com/-m88dpWcWBI4/AAAAAAAAAAI/AAAAAAAAAts/50q64HIGyxY/s100-c-k-no/photo.jpg)
 
 
- Project Tasks
- ===============
+Project Tasks
+=============
 
  * Taking a picture using the camera
    * Python
