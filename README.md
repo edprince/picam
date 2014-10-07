@@ -10,7 +10,7 @@ Project Tasks
 =============
 
  * Taking a picture using the camera
-   * Python
+   * http://www.raspberrypi.org/learning/python-picamera-setup/
  * Create database on server
  * Use HTTP to transfer the file across to the server
  * Insert file path of image with image ID in a table
@@ -19,15 +19,15 @@ Project Tasks
  * Remove images from older than 2 days
    *New item
  * Research into image file types and compression
+ * Preventing SD card corruption
 
 
- 
- 
-1. Item 1
-  1. A corollary to the above item.
-  2. Yet another point to consider.
-2. Item 2
-  * A corollary that does not need to be ordered.
-    * This is indented four spaces, because it's two spaces further than the item above.
-    * You might want to consider making a new list.
-3. Item 3
+ The PHP page
+ ============
+ Within this page I need to:
+  * Establish connection to database
+  * Grab images from location
+  * Display images
+  * Add a "refresh" features that automatically refreshes every time a new image is added to the database
+  * Style the page well
+  * Add a login feature for security
