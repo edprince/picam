@@ -22,8 +22,8 @@ Project Tasks
  * Preventing SD card corruption
 
 
- The PHP page
- ============
+The PHP page
+============
  Within this page I need to:
   * Establish connection to database
   * Grab images from location
@@ -31,3 +31,12 @@ Project Tasks
   * Add a "refresh" features that automatically refreshes every time a new image is added to the database
   * Style the page well
   * Add a login feature for security
+
+File Tree
+=========
+ * TakePicture.py
+ * DisplayFeed.php
+ * Login.php
+ * SendPicture.py
+ 
+
