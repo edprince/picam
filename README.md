@@ -39,4 +39,9 @@ File Tree
  * Login.php
  * SendPicture.py
  
-
+|Potential Solutions|Positives|Negatives|
+|====================|
+|I could use a motion sensor, with a Pi or Aruduino (or similar)|
+|I could use a dedicated sercurity camera that will automatically feed the images|
+|Use a webcam that live streams to a site|
+ * 
