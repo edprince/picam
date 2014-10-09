@@ -44,4 +44,5 @@ File Tree
 |I could use a motion sensor, with a Pi or Aruduino (or similar)|More effective than image comparison|Less experience with other hardware|
 |I could use a dedicated sercurity camera that will automatically feed the images|Dedicated hardware is more effective|More expensive for this system, less customizable|
 |Use a webcam that live streams to a site|Easy streaming to website|Inconvenient, especially if not wireless|
- * 
+
+I am going to use a Raspberry Pi and camera module.
