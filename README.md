@@ -46,3 +46,10 @@ File Tree
 |Use a webcam that live streams to a site|Easy streaming to website|Inconvenient, especially if not wireless|
 
 I am going to use a Raspberry Pi and camera module.
+
+Extensions
+==========
+ * Use AJAX to update images
+ * Send message to phone
+ * Upload image to site
+ * Add camera selection feature
