@@ -53,3 +53,7 @@ Extensions
  * Send message to phone
  * Upload image to site
  * Add camera selection feature
+ * 
+ 
+#Using FTP to transfer images#
+
