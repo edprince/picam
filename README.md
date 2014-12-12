@@ -11,10 +11,12 @@ Project Tasks
 
  * Taking a picture using the camera
    * http://www.raspberrypi.org/learning/python-picamera-setup/
- * Create database on server
+ * Create database on server (Completed on local machine)
+ * Login SQL queries (Complete)
  * Use HTTP to transfer the file across to the server
  * Insert file path of image with image ID in a table
- * Create a webage that can display the image
+ * Create a webage that can display the image (Front end html working)
+ * App.js
  * Display a new image every 10 seconds
  * Remove images from older than 2 days
    *New item
@@ -22,7 +24,7 @@ Project Tasks
  * Preventing SD card corruption
 
 
-The PHP page
+The PHP page NO LONGER SOLUTION
 ============
  Within this page I need to:
   * Establish connection to database
@@ -31,11 +33,16 @@ The PHP page
   * Add a "refresh" features that automatically refreshes every time a new image is added to the database
   * Style the page well
   * Add a login feature for security
+  
+The PHP page
+============
+ * This page is solely responsible for the functionality of the login feature I am including
 
 File Tree
 =========
  * TakePicture.py
- * DisplayFeed.php
+ * DisplayFeed.html
+ * App.js
  * Login.php
  * SendPicture.py
  
