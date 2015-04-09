@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+  /*background-image: url("http://blogstockphoto.com/wp-content/uploads/2014/09/Blurred-Background-Retina-Display.jpg");
+   */
+  /*background-image: url("https://drscdn.500px.org/photo/94247167/m%3D2048/5df96a39efcb105f15710a635e2676a6");
+   */
+ /* background-size: 100%;
+  font-family: helvetica;
+  background-attachment: fixed;
+  */
+  font-family: helvetica;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+
+.login {
+  margin: 15% 1em;
+  margin-top: 15%;
+  background-color: white;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  text-align: center;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header h2 {
+  font-size: 1.3em; 
+  margin-top: 1em;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.login input {
+  height: 30px;
+  max-width: 100%;
+  /* border-radius: 3px; */
+  border: 0;
+  font-size: 1.2em;
+  margin-bottom: 1%;
+  border-bottom: solid 1px #AEAEAE;
+  outline: none;
+}
+
+.login label {
+  text-transform: uppercase;
+  color: blue;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: left;
+  display: none;
+}
+
+.login .control {
+  text-align: left;
+}
+
+.login input:focus ~ label {
+  display: block;
+}
+
+form .group {
+  padding: 1em 0; 
+}
+
+.login p {
+  margin-bottom: 2%;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.button {
+  margin-bottom: 5%;
+  border-radius: 3px;
+  border: solid 1px #AEAEAE;
+  height: 35px;
+  width: 90%;
+  background-color: #D7D7D7;
+  -webkit-transition-duration: 0.3s;
+}
+
+.button:hover {
+  -webkit-transition-duration: 0.3s;
+  background-color: #3777DF;
+  border: solid 1px #3773DF;
+  color: white;
+  width: 90%;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0 ,0.2);
+}
+
+#register {
+  margin-top: 0;
+}
+
+#register:hover {
+}
+
+footer p {
+  color: white;
+}
+
+.error {
+  color: #A53A3A;
+  background-color: #EDB9B9;
+}
+
+.success {
+  color: #3AA53A;
+  background-color: #B9EDB9;
+}
+
+.message {
+  border-radius: 0.2em;
+  padding: 0.5em;
+  margin-top: 0;
+  margin: 0 auto;
+}
+
+
+.back {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.back a {
+  text-decoration: none;
+  color: #AEAEAE;
+  -webkit-transition-duration: 0.4s;
+}
+
+.back a:hover {
+  color: grey;
+  -webkit-transition-duration: 0.4s;
+}
