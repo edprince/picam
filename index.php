@@ -14,7 +14,7 @@
 ?>
 <?php require "includes/header.php"; ?>
 <body>
-  <?php require "includes/background.php"; ?>
+    <?php require "includes/background.php"; ?>
   <div class="row">
     <main class="login small-12 medium-8 large-4 small-centered medium-centered large-centered columns">
       <header>
@@ -33,7 +33,9 @@
             <i class="fa fa-warning"></i>
             <b>Wrong username or password</b>
           </p>
-        <?php } ?>
+<?php
+}
+?>
 
         <hr />
         <button class="button" id="signin">
@@ -42,7 +44,7 @@
         </button>
       </form>
       <div class="small-12 columns">
-        <a href="registercopy.php">
+        <a href="register.php">
           <button class="button" id="register">
             <i class="fa fa-edit"></i>
             <b>Register</b>
@@ -51,8 +53,5 @@
       </div>
     </main>
   </div>
-  <footer>
-  <p><b>PiCam</b> | <b>Ed Prince</b></p>
-  </footer>
 </body>
 </html>

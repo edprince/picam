@@ -19,25 +19,20 @@ $username = $_SESSION['username'];
     <nav>
       <div class="left">
         <a href="display.php">
-          <i class="fa fa-video"></i>
           <p>Your Cam</p>
         </a>
         <a href="about.php">
-          <i class="fa fa-info"></i>
           <p>About</p>
         </a>
         <a href="user.php">
-          <i class="fa fa-book"></i>
           <p>User Manual</p>
         </a>
-        <a href="github.php">
-          <i class="fa fa-github"></i>
+        <a href="https://github.com/edprince/picam">
           <p>Source Code</p>
         </a>
       </div>
       <div class="right">
         <a href="index.php">
-          <i class="fa fa-sign-out"></i>
           <p>Sign Out</p>
         </a>
       </div>

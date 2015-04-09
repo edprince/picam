@@ -6,10 +6,10 @@ body {
 }
 
 body img {
-  display: block;
+  //display: block;
   margin: 0 auto;
 }
-.nav {
+nav {
   margin-top: 0;
   border-bottom: solid 1px #D7D7D7;
   border-top: solid 1px #D7D7D7;
@@ -17,6 +17,7 @@ body img {
   color: #AEAEAE;
   text-align: right;
   margin-bottom: 1%;
+  //display: inline;
 }
 
 #nav-break:hover {

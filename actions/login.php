@@ -19,12 +19,12 @@ $result = $dbcnx->query($sql);
 
 if ($result->num_rows > 0) {
   //redirect
-  header("Location: display.php");
+  header("Location: ../display.php");
   $_SESSION['logged'] = "true";
 } else {
   //ERROR LOGGIN IN
   $_SESSION['logged'] = "tried"; 
-  header("Location: index.php");
+  header("Location: ../index.php");
 }
 
 /*

@@ -44,6 +44,12 @@ header h2 {
   margin-bottom: 1%;
   border-bottom: solid 1px #AEAEAE;
   outline: none;
+  -webkit-transition-duration: 0.2s;
+}
+
+.login input:focus {
+  border-bottom: solid 1px #66B6F9;
+  -webkit-transition-duration: 0.3s;
 }
 
 .login label {
