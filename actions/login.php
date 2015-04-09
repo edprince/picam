@@ -2,7 +2,7 @@
 session_start();
 $host = "localhost";
 $user = "root";
-$password = 'sheepish123';
+$password = '#';
 $database = 'picam';
 
 //Assign username and password attempts to variables
