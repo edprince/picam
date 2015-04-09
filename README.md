@@ -23,44 +23,10 @@ Project Tasks
  * Research into image file types and compression
  * Preventing SD card corruption
 
+Project Overview
+================
 
-The PHP page NO LONGER SOLUTION
-============
- Within this page I need to:
-  * Establish connection to database
-  * Grab images from location
-  * Display images
-  * Add a "refresh" features that automatically refreshes every time a new image is added to the database
-  * Style the page well
-  * Add a login feature for security
-  
-The PHP page
-============
- * This page is solely responsible for the functionality of the login feature I am including
+The project will send images from the Raspberry Pi to the server using SFTP. The server will store the images captured, in dedicated directories, ready to be served on request to web-page.
 
-File Tree
-=========
- * TakePicture.py
- * DisplayFeed.html
- * App.js
- * Login.php
- * SendPicture.py
- 
-|Potential Solutions|Positives|Negatives|
-|-------------------|---------|---------|
-|I could use a motion sensor, with a Pi or Aruduino (or similar)|More effective than image comparison|Less experience with other hardware|
-|I could use a dedicated sercurity camera that will automatically feed the images|Dedicated hardware is more effective|More expensive for this system, less customizable|
-|Use a webcam that live streams to a site|Easy streaming to website|Inconvenient, especially if not wireless|
 
-I am going to use a Raspberry Pi and camera module.
-
-Extensions
-==========
- * Use AJAX to update images
- * Send message to phone
- * Upload image to site
- * Add camera selection feature
- * 
- 
-#Using FTP to transfer images#
 
