@@ -10,30 +10,40 @@ if ($_SESSION['logged'] == "tried") {
 }
 $username = $_SESSION['username'];
 ?>
-<?php require "includes/header.php"; ?>
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/normalize.css"
+        rel="stylesheet"/>
+  <link href="assets/styles/foundation.css" type="text/css" rel="stylesheet" />
+
+
   <link href="assets/styles/displaystyle.css" type="text/css" rel="stylesheet">
 </head>
   <body>
-    <?php require_once "includes/analyticstracking.php"; ?>
     <nav>
-      <div class="left">
+      <div class="nav-wrapper">
         <a href="display.php">
-          <p>Your Cam</p>
-        </a>
+          <i class="fa fa-camera"></i>
+          Your Cam
+        </a> | 
         <a href="about.php">
-          <p>About</p>
-        </a>
-        <a href="user.php">
-          <p>User Manual</p>
-        </a>
+          <i class="fa fa-gear"></i>
+          About
+        </a> |
+        <a href="assets/user-manual.pdf">
+          <i class="fa fa-book"></i>
+          User Manual
+        </a> |
         <a href="https://github.com/edprince/picam">
-          <p>Source Code</p>
-        </a>
-      </div>
-      <div class="right">
+          <i class="fa fa-github"></i>
+          Source Code
+        </a> | 
         <a href="index.php">
-          <p>Sign Out</p>
+          <i class="fa fa-sign-out"></i>
+          Sign Out
         </a>
       </div>
     </nav>

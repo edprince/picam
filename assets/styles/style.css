@@ -10,7 +10,6 @@ body {
   */
   font-family: helvetica;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 
@@ -144,4 +143,9 @@ footer p {
 .back a:hover {
   color: grey;
   -webkit-transition-duration: 0.4s;
+}
+
+.about-content {
+  background-color: white;
+  color: black;
 }
