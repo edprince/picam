@@ -1,11 +1,11 @@
 <?php
 session_start();
-/*$host = "localhost";
+$host = "localhost";
 $user = "root";
 $password = '#';
 $database = 'picam';
- */
-require "../.gitignore/secure.php";
+
+//require "../.gitignore/secure.php";
 //Assign username and password attempts to variables
 $username=$_GET["username"];
 $user_password=$_GET["password"];
@@ -27,17 +27,5 @@ if ($result->num_rows > 0) {
     $_SESSION['logged'] = "tried"; 
     header("Location: ../index.php");
 }
-
-/*
-if ($result->num_rows > 0) {
-// output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["userName"]. " " . $row["passWord"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-*/
-
 $dbcnx->close();
 ?>

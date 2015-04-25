@@ -3,11 +3,12 @@ body {
   width: 100%;
   margin:0 auto;
   font-family: helvetica;
-  text-align: center;
 }
 
 body img {
   margin: 0 auto;
+  margin-top: 1em;
+  height: 500px;
 }
 nav {
   //margin-top: .5em;
@@ -16,7 +17,6 @@ nav {
   background-color: #F9F7F7;
   color: #AEAEAE;
   text-align: right;
-  margin-bottom: 1%;
   padding-top: .5em;
   padding-bottom: .5em;
 }
@@ -40,6 +40,78 @@ nav a:hover {
   box-shadow: 2px 2px 9px grey;
 }
 
+.image-wrapper {
+  text-align: center;
+}
+
+.image-wrapper p {
+  position: absolute;
+  float
+}
 .nav-wrapper {
   margin-right: 5em;
+}
+
+.footer {
+  background-color: #479EFF;
+  margin-top: 2em;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
+.about-content h1{
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.about-content p {
+  text-align: justify;
+}
+
+.banner {
+  text-align: center;
+}
+.banner h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+#justify {
+  //text-align: justify;
+}
+
+.banner a {
+  text-align: center;
+}
+
+.banner img {
+  height: 150px;
+  text-align: center;
+}
+
+.security {
+  border-left: solid 3px #BBDEFD;
+}
+
+.web {
+  border-left: solid 3px #42A5F5;
+}
+
+.device {
+  border-left: solid 3px #1565C0;
+}
+
+.code { 
+  font-size: 90%;
+  line-height: 0.2em;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  display: inline; 
+  color: #555555;
+  padding: 1em 1em;
+  background: #f4f4f4;
+  margin-top: 1em;
+  margin-bottom: 5em;
 }

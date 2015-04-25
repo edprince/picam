@@ -2,11 +2,11 @@
 <?php
   session_start();
 if ($_SESSION['logged'] == "") {
-    header("Location: index.php");
+    //header("Location: index.php");
 }
 
 if ($_SESSION['logged'] == "tried") {
-    header("Location: index.php");
+    //header("Location: index.php");
 }
 $username = $_SESSION['username'];
 ?>
@@ -47,8 +47,7 @@ $username = $_SESSION['username'];
         </a>
       </div>
     </nav>
-    <img class="display" src="assets/images/oldest.jpg" width="70%" /> 
-    <div class="footer">
-      
+    <div class="image-wrapper">
+      <img class="display" src="assets/images/bg3.jpg" /> 
     </div>
 <?php require "includes/footer.php"; ?>
