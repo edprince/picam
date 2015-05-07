@@ -1,25 +1,22 @@
-var symbols = ['!', '£', '$', '%', '^', '&', '*', '(', ')'];
-var password = document.getElementById('password');
-var retype = document.getElementById('retype');
-var matching;
+var form = document.getElementById('registration');
+form.addEventlistener('submit', function() {
+  return check();
+});
+
+function check(){
+  var pass1 = document.getElementById('password').value;
+  var pass2 = document.getElementById('re-password').value;
+  var email = document.getElementById('email').value;
+  return (checkPasswordsMatch(pass1, pass2) && checkEmailFormat(email);
+}
 
 function checkPasswordsMatch (pass1, pass2) {
-  if (pass1 !== pass2) {
-    alert("The passwords do not match");
-    matching = false;
-  } else {
-    matching = true;
-  }
+  //returns boolean
+  return (pass1 === pass2);
 }
 
-function checkSymbols(pass) {
-  for (var i = 0; i < pass.length + 1; i++) {
-    
+function checkEmailFormat(email) {
+  var regex = /.*@.*\..*/;
+  //returns boolean
+  return (regex.test(email));
 }
-
-checkPasswordMatch(password, retype);
-
-if (matching === true) {
-
-}
-

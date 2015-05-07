@@ -5,7 +5,7 @@
     <header>
       <h2>Register for PiCam</h2>
     </header>
-    <form action="actions/register.php" method="get" class="small-12 columns">
+    <form action="actions/register.php" id="registration" method="get" class="small-12 columns">
       <br />
 
         <?php if ($_SESSION['duplicateUser'] == "true") { ?>
@@ -30,7 +30,7 @@
         <input type="password" required name="re-password" id="re-password" placeholder="Re-type password" />
       </div>
       <hr />
-      <button class="button" id="signin">
+      <button class="button" id="signin" onclick="checkPassword()">
         <i class="fa fa-edit"></i>
         <b>Register</b>
       </button>

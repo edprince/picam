@@ -33,11 +33,11 @@ $username = $_SESSION['username'];
           <i class="fa fa-gear"></i>
           About
         </a> |
-        <a href="assets/user-manual.pdf">
+        <a href="assets/user-manual.pdf" target="_blank">
           <i class="fa fa-book"></i>
           User Manual
         </a> |
-        <a href="https://github.com/edprince/picam">
+        <a href="https://github.com/edprince/picam" target="_blank">
           <i class="fa fa-github"></i>
           Source Code
         </a> | 
@@ -48,6 +48,6 @@ $username = $_SESSION['username'];
       </div>
     </nav>
     <div class="image-wrapper">
-      <img class="display" src="assets/images/bg3.jpg" /> 
+      <img class="display" src="assets/images/bosh.jpg" /> 
     </div>
 <?php require "includes/footer.php"; ?>

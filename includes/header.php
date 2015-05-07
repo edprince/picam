@@ -24,4 +24,6 @@
         rel="stylesheet"/>
   <link href="assets/styles/foundation.css" type="text/css" rel="stylesheet" />
   <link href="assets/styles/style.css" type="text/css" rel="stylesheet" />
+  <script src="..actions/js/checkEmail.js"></script>
+  <script src="..actions/js/checkPassword.js"></script>
 </head>
