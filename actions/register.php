@@ -26,7 +26,7 @@ session_start();
 //Set Variables
 $host = 'localhost';
 $user = 'root';
-$db_password = '#';
+$db_password = 'sheepish123';
 $database = 'picam';
 //Get variables
 $firstname = $_GET['firstname'];
@@ -36,53 +36,33 @@ $username = $_GET['username'];
 $password = $_GET['password'];
 $repassword = $GET['re-password'];
 
-echo $firstname;
+$_SESSION['duplicateUser'] = "false"; 
 
+//Hash password
 $password = hash('whirlpool', $password);
 
-
 //Connect to database
-function connect($host, $user, $db_password, $database)
-{
-    $dbcnx = new mysqli($host, $user, $db_password, $database);
-    echo "Connection successful!!!!!";
-}
+$dbcnx = new mysqli($host, $user, $db_password, $database);
 
-echo "Successful connection";
-
-function checkOtherUsers($attempt)
-{
-    echo "Function running";
-    $sql = "SELECT * FROM users WHERE username = '$attempt'";
-    echo $sql;
-    connect($host, $user, $db_password, $database);
-    $new_result = $dbcnx->query($sql);
-    echo "Boo!";
-    echo $new_result;
-    if ($new_result->num_rows > 0) {
-        echo "HEY!";
-        $_SESSION['duplicateUser'] = "true";
-        echo "If = true";
-        header("Location: ../index.php");
-        echo "FAIL";
-    } else {
-        echo "SUCCESS";
-        $_SESSION['duplicateUser'] = "false";
-    }
-}
-
-
-checkOtherUsers($username);
-
-echo "Function concluded";
-//Create Query
-$sql = "INSERT INTO users (firstname, lastname, email, username, password) VALUES
-       ('$firstname', '$lastname', '$email', '$username', '$password');";
-//Execute query
+//Check for duplicate users
+$sql = "SELECT * FROM users WHERE username = '$username'";
+echo $sql;
 $result = $dbcnx->query($sql);
 
-header("Location: ../index.php");
+if ($result->num_rows > 0) {
+    $_SESSION['duplicateUser'] = "true";
+    echo "If = true";
+    header("Location: ../register.php");
+} else {
 
+    //Insert new user details into database
+    $sql = "INSERT INTO users (firstname, lastname, email, username, password) VALUES
+           ('$firstname', '$lastname', '$email', '$username', '$password');";
+    //Execute query
+    $result = $dbcnx->query($sql);
+
+    header("Location: ../index.php");
+} 
 
 
 ?>

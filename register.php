@@ -7,6 +7,15 @@
     </header>
     <form action="actions/register.php" method="get" class="small-12 columns">
       <br />
+
+        <?php if ($_SESSION['duplicateUser'] == "true") { ?>
+        <p class='error message'>
+          <i class="fa fa-warning"></i>
+          <b>Username not available</b>
+        </p>
+        <?php
+}
+        ?>
       <div class="control">
         <label>first name</label>
       </div>

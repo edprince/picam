@@ -14,20 +14,20 @@
 session_start();
 $host = "localhost";
 $user = "root";
-$password = '#';
+$password = 'sheepish123';
 $database = 'picam';
 
 //require "../.gitignore/secure.php";
 //Assign username and password attempts to variables
 $username = $_GET["username"];
-$user_password = hash('whirlpool', $_GET["password"]);
+$user_password = $_GET["password"];
 
 $_SESSION['username'] = $username;
 //Connect to database
 $dbcnx = new mysqli($host, $user, $password, $database);
   
 //Hash user_password
-//$user_password = hash('whirlpool', $user_password);
+$user_password = hash('whirlpool', $user_password);
 
 //Query the database for matching account
 $sql = "SELECT * FROM users WHERE
@@ -38,8 +38,9 @@ $result = $dbcnx->query($sql);
 
 if ($result->num_rows > 0) {
     //redirect
-    header("Location: ../display.php");
     $_SESSION['logged'] = "true";
+    $_SESSION['duplicateUser'] = "false";
+    header("Location: ../display.php");
 } else {
     //ERROR LOGGING IN
     $_SESSION['logged'] = "tried"; 
