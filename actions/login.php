@@ -14,7 +14,7 @@
 session_start();
 $host = "localhost";
 $user = "root";
-$password = 'sheepish123';
+$password = '#';
 $database = 'picam';
 
 //require "../.gitignore/secure.php";

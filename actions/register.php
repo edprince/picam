@@ -26,7 +26,7 @@ session_start();
 //Set Variables
 $host = 'localhost';
 $user = 'root';
-$db_password = 'sheepish123';
+$db_password = '#';
 $database = 'picam';
 //Get variables
 $firstname = $_GET['firstname'];

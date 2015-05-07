@@ -30,7 +30,7 @@
         <input type="password" required name="re-password" id="re-password" placeholder="Re-type password" />
       </div>
       <hr />
-      <button class="button" id="signin" onclick="checkPassword()">
+      <button class="button" id="signin">
         <i class="fa fa-edit"></i>
         <b>Register</b>
       </button>
