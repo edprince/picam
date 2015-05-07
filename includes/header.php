@@ -24,5 +24,5 @@
         rel="stylesheet"/>
   <link href="assets/styles/foundation.css" type="text/css" rel="stylesheet" />
   <link href="assets/styles/style.css" type="text/css" rel="stylesheet" />
-  <script src="/assets/js/check.js"></script>
+  <script src="assets/js/check.js"></script>
 </head>

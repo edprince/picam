@@ -1,13 +1,16 @@
-var form = document.getElementById('registration');
-form.addEventlistener('submit', function() {
-  return check();
+
+window.addEventListener('load', function() {
+  var form = document.getElementById('registration');
+  form.addEventListener('submit', function() {
+    return check();
+  });
 });
 
 function check(){
   var pass1 = document.getElementById('password').value;
   var pass2 = document.getElementById('re-password').value;
   var email = document.getElementById('email').value;
-  return (checkPasswordsMatch(pass1, pass2) && checkEmailFormat(email);
+  return checkPasswordsMatch(pass1, pass2) && checkEmailFormat(email);
 }
 
 function checkPasswordsMatch (pass1, pass2) {
