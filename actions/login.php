@@ -35,8 +35,18 @@ $sql = "SELECT * FROM users WHERE
   AND passWord = '$user_password'";
 
 $result = $dbcnx->query($sql);
+$_SESSION['result'] = $result;
 
 if ($result->num_rows > 0) {
+  
+    //Get user Id
+    $sql = "SELECT id FROM users WHERE username = '$username' AND password = '$user_password'";
+    $id = $dbcnx->query($sql);
+    while ($row = $id->fetch_assoc()) {
+        $_SESSION['id'] = $row["id"];
+
+    }
+      
     //redirect
     $_SESSION['logged'] = "true";
     $_SESSION['duplicateUser'] = "false";
@@ -46,5 +56,7 @@ if ($result->num_rows > 0) {
     $_SESSION['logged'] = "tried"; 
     header("Location: ../index.php");
 }
+
+
 $dbcnx->close();
 ?>

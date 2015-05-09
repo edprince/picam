@@ -5,6 +5,8 @@ if ($_SESSION['logged'] == "") {
     //header("Location: index.php");
 }
 
+
+
 if ($_SESSION['logged'] == "tried") {
     //header("Location: index.php");
 }
@@ -51,4 +53,5 @@ $username = $_SESSION['username'];
     <div class="image-wrapper">
       <img class="display" id="cam" src="assets/images/latest.jpg" /> 
     </div>
+    <input type="hidden" id="id" value="<?php echo $_SESSION['id']; ?>"></input>
 <?php require "includes/footer.php"; ?>

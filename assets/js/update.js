@@ -1,12 +1,20 @@
 window.addEventListener('load', function() {
   var img = document.getElementById('cam');
-  setInterval(updateVersion, 10000);
+  var version;
+  var id = document.getElementById('id').value;
+  console.log(typeof updateVersion);
+  setInterval(function() {
+    updateVersion(img, version, id);
+  }, 5000);
 });
 
 
-var version = 1;
-function updateVersion() {
-  version+=1;
-  img.src = 'assets/images/latest.jpg?v=' + version;
+function updateVersion(x,v, id) {
+  v+=1;
+  var n = Math.random().toString();
+  console.log("Version incremented" + n);
+  x.src = 'assets/images/' + id + '/latest.jpg?v=' + n;
+  console.log("source changed");
+  console.log("id: " + id);
 }
 
