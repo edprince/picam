@@ -1,8 +1,8 @@
 #!/bin/bash
 while true
 do
-  echo "`mv /var/www/html/github/images/latest.jpg /var/www/html/github/images/temp.jpg`"
-  echo "`mv /var/www/html/github/images/oldest.jpg /var/www/html/github/images/latest.jpg`"
-  echo "`mv /var/www/html/github/images/temp.jpg /var/www/html/github/images/oldest.jpg`"
+  echo "`mv latest.jpg temp.jpg`"
+  echo "`mv oldest.jpg latest.jpg`"
+  echo "`mv temp.jpg oldest.jpg`"
   sleep 5
 done

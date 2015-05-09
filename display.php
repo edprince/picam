@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-  session_start();
+session_start();
 if ($_SESSION['logged'] == "") {
     //header("Location: index.php");
 }
@@ -21,6 +21,7 @@ $username = $_SESSION['username'];
 
 
   <link href="assets/styles/displaystyle.css" type="text/css" rel="stylesheet">
+  <script src="assets/js/update.js"></script>
 </head>
   <body>
     <nav>
@@ -48,6 +49,6 @@ $username = $_SESSION['username'];
       </div>
     </nav>
     <div class="image-wrapper">
-      <img class="display" src="assets/images/bosh.jpg" /> 
+      <img class="display" id="cam" src="assets/images/latest.jpg" /> 
     </div>
 <?php require "includes/footer.php"; ?>

@@ -1,5 +1,6 @@
 <?php require "includes/header.php"; ?>
 <?php require "includes/background.php"; ?>
+<script src="assets/js/check.js"></script>
 <div class="row">
   <main class="login small-12 medium-8 large-4 small-centered medium-centered large-centered columns">
     <header>
