@@ -13,7 +13,7 @@
  */
 session_start();
 $host = "localhost";
-$user = "root";
+$user = "#";
 $password = '#';
 $database = 'picam';
 
